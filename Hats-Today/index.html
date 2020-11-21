@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History of Hats</title>
+    <!-- link to style.css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- link to script.js - make sure to defer -->
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/model-img.js" defer></script>
+    <script src="../js/model-text.js" defer></script>
+  </head>
+  <body>
+    <!-- nav element goes here -->
+<nav>
+  <a href="../index.html"><img id="logo" src="../images/hat 3.png" alt="Logo"></a>
+  <img id="hamburger" src="../icons/menu.svg" alt="Menu" onclick="toggleMenu()" />
+  <div id="overlay" onclick="toggleMenu()"></div>
+  <ul id="menu" onclick="toggleMenu()">
+    <li><a href="../the-first-hats/index.html">The First Hats</a></li>
+    <li><a href="../the-middle-ages/index.html">The Middle Ages</a></li>
+    <li><a href="../the-victorian-era/index.html">The Victorian Era</a></li>
+    <li><a href="../the-american-century/index.html">The American Century</a></li>
+    <li><a href="../hats-today/index.html">Hats Today</a></li>
+  </ul>
+</nav>
+
+    <!-- main element goes here -->
+    <main>
+        <img src="../images/modern day.jpg" alt="Hats" class="hidden-mobile">
+        <img src="../images/modern day (small).jpg" alt="Hats Mobile" class="visible-mobile">
+      <article>
+        <!-- header of article goes here -->
+        <header>
+          <section id="Hats Today">
+            <h1>Hats Today</h1>
+            <p>
+                Here in the 21st century, we see hats not only based on previous time periods like the American Century and the Victorian Age, but also hats that reference to earlier periods with straw hats and felt caps to the Middle Ages and some of the first hats.    
+            </p>
+            <p>
+                Our style and culture of hats have been building upon each other to finally lead us to where we are today. One vast difference between hats of today and hats previously, is that hats are no longer just used for function or to show social status, they're also used for marketing.
+            </p>
+            <p>
+                Below it a series of collected data from the 2016 Global Advertising Specialities Impressions Study, which found some statisitcal trends among modern day hat wearers in the US, and the power of marketing that hats can bring with them.
+            </p>
+
+            <img id="myImg" src="../images/impressions-study-2016.jpg" alt="Hat Study" class="center" style="width:100%;max-width:300px">
+
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" src="../images/impressions-study-2016.jpg" alt="Hat Study">
+                <div id="caption"></div>
+            </div>
+
+            <p>
+                Thanks for reading and making it all the way to the end! Click on the hat in the upper left corner to return to the home page.
+            </p>
+
+            <div style="text-align: center;">
+            <button class="button button1"><a href="../the-american-century/index.html">Previous Page</a></button>
+            </div>  
+        </section>
+        </header>
+        </article>
+
+        
+    </main>
+
+
+    <!-- footer element goes here -->
+    <footer>
+      <p>This website was made by
+        <a href="https://github.com/Just-Jeff">Jake Jeffries</a>
+        in
+        <a href="https://mejo187.com">Foundations of Interactive Media</a>
+        at
+        <a href="https://unc.edu">The University of North Carolina at Chapel Hill</a>. 
+      </p>
+
+      <button id="myBtn">Citations</button>
+
+        <!-- The Modal -->
+        <div id="myModalCitations" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-contentText">
+            <span id="textSpan" class="close">&times;</span>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Hat">Origin of Hats</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/List_of_hat_styles">List of Different Hat Styles</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Middle_Ages">The Middle Ages</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Victorian_era">The Victorian Era</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/American_Century">The American Century</a></li>
+                <li><a href="https://media.asicentral.com/resources/impressions-study-2016.pdf">2016 Global Advertising Specialities Impressions Study</a></li>
+            </ul>
+        </div>
+
+        </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,450 @@
+/* Global Styles */
+
+html,
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-size: 29px;
+    margin-top: -60px;
+}
+
+
+h5 {
+    font-size: 29px;
+    margin-top: 20px;
+}
+
+h6 {
+    font-size: 29px;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 19px;
+    line-height: 35px; 
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+  
+  a:hover {
+    text-decoration: underline;
+    color: black;
+}
+  
+  a:active {
+    text-decoration: underline;
+    color: black;
+}
+
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  /* Modal Content (text) */
+  .modal-contentText {
+    background-color: #fefefe;
+    color: black;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal-contentText ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 200%;
+}
+
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: black;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 75px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+figure {
+    margin: 0;
+
+}
+
+.visible-mobile {
+    display: none !important;
+  }
+  
+  @media (max-width: 767px) {
+    .visible-mobile {
+      display: block !important;
+    }
+  
+    .hidden-mobile {
+      display: none !important;
+    }
+  }
+
+
+/* Section Styles */
+
+main > article > section {
+    padding: -30px 0px; 
+    max-width: 1300px; 
+    margin: 0 auto; 
+}
+
+@media (min-width: 768px) {
+    main > article > section > header > p {
+        max-width: 50%;
+    }
+}
+/* Grid Styles */
+
+/* This is only applied on desktop */ 
+@media (min-width: 768px) {
+    /* This grid is with two columns */ 
+    .grid-1-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        
+    }
+        /* This grid is with four columns */ 
+    .grid-1-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 40px;
+        padding: 0px 20px; 
+    }
+}
+
+/* Card Styles */
+
+.card {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 5px; 
+    overflow: hidden; 
+    margin-bottom: 40px; 
+}
+
+.card section {
+    padding: 20px; 
+}
+
+.card p {
+    font-size: 17px;
+}
+
+/* This is only applied on desktop */ 
+@media (min-width: 768px) {
+    /* Image should fill figure container of card that also has two column */
+    .card.grid-1-2 img {
+        object-fit: cover;
+        height: 100px; 
+    }
+    .card.grid-1-2 section {
+        padding: 40px; 
+    }
+}
+/* Header Styles */
+
+    main > article > header {
+        height: unset;
+        padding: 100px 40px; 
+    }
+
+
+/* Button Styles */
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+
+
+/* Navbar Styles */
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fac720;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+
+#logo {
+    height: 80px;
+    width: auto;
+    margin-right: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#hamburger {
+    display: none;
+}
+
+#overlay {
+    display: none;
+}
+
+/* Navagation mobile styles */
+@media (max-width: 767px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    nav ul {
+        display: none;
+        max-width: 60vw;
+        width: 100%;
+        height: 100vh; 
+        background: #fac720;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 20px; 
+        box-sizing: border-box;
+        z-index: 2; 
+    }
+
+    nav ul.active {
+        display: block; 
+    }
+
+    nav ul li {
+        padding: 20px;
+    }
+
+    #hamburger {
+        display: block;
+        height: 30px;
+        width: auto;
+    }
+
+    #overlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background: black;
+        opacity: 0.5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1; 
+    }
+
+    #overlay.active {
+    display: block;
+    }
+}
+
+/* Navagation desktop styles */
+@media (min-width: 768px) {
+    nav {
+        padding: 0 20px;
+    }
+    nav ul {
+        display: flex;
+        max-width: 950px;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* Footer Styles*/
+
+footer {
+    background: black;
+    color: white;
+    padding: 20px 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:link {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:visited {
+    text-decoration: none;
+    color: white;
+}
+  
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+  
+footer a:active {
+    text-decoration: underline;
+    color: white;
+}

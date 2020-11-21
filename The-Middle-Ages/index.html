@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History of Hats</title>
+    <!-- link to style.css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- link to script.js - make sure to defer -->
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/model-img.js" defer></script>
+    <script src="../js/model-text.js" defer></script>
+  </head>
+  <body>
+    <!-- nav element goes here -->
+<nav>
+  <a href="../index.html"><img id="logo" src="../images/hat 3.png" alt="Logo"></a>
+  <img id="hamburger" src="../icons/menu.svg" alt="Menu" onclick="toggleMenu()" />
+  <div id="overlay" onclick="toggleMenu()"></div>
+  <ul id="menu" onclick="toggleMenu()">
+    <li><a href="../the-first-hats/index.html">The First Hats</a></li>
+    <li><a href="../the-middle-ages/index.html">The Middle Ages</a></li>
+    <li><a href="../the-victorian-era/index.html">The Victorian Era</a></li>
+    <li><a href="../the-american-century/index.html">The American Century</a></li>
+    <li><a href="../hats-today/index.html">Hats Today</a></li>
+  </ul>
+</nav>
+
+    <!-- main element goes here -->
+    <main>
+        <img src="../images/middle ages (wide).jpg" alt="Hats" class="hidden-mobile">
+        <img src="../images/middle ages (mobile).jpg" alt="Hats Mobile" class="visible-mobile">
+      <article>
+        <!-- header of article goes here -->
+        <header>
+          <section id="The Middle Ages">
+            <h1>The Middle Ages</h1>
+            <p>
+                Hats then evolved from being just a practical tool, to that of status and wealth in Europe during the Middle Ages in 500 to 1500 AC.
+            </p>
+            <p>
+                Many people in the Middle Ages were serfs, meaning that they tended to the land for the upper class. Women wore bonnets and wimples made from silk or cloth, while men wore straw hats, cloth coifs and caps, and wool or felt berets.
+            </p>
+            <p>
+                Other hats that were worn during this period were veils and church head gear deemed acceptable by the Catholic Church. Knights of course had on helmets meant to protect themselves, and royalty wore jewels and crown meant to show their status.
+            </p>
+            <p>
+                Featured above are some images of what these early hats looked like, and how they would later evolve into the hats we see today.
+            </p>
+            <div style="text-align: center;">
+            <button class="button button1"><a href="../the-first-hats/index.html">Previous Page</a></button>
+            <button class="button button2"><a href="../the-victorian-era/index.html">Next Page</a></button>
+            </div>  
+        </section>
+        </header>
+        </article>
+
+        
+    </main>
+
+
+    <!-- footer element goes here -->
+    <footer>
+      <p>This website was made by
+        <a href="https://github.com/Just-Jeff">Jake Jeffries</a>
+        in
+        <a href="https://mejo187.com">Foundations of Interactive Media</a>
+        at
+        <a href="https://unc.edu">The University of North Carolina at Chapel Hill</a>. 
+      </p>
+
+      <button id="myBtn">Citations</button>
+
+      <!-- The Modal -->
+      <div id="myModalCitations" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-contentText">
+          <span id="textSpan" class="close">&times;</span>
+          <ul>
+              <li><a href="https://en.wikipedia.org/wiki/Hat">Origin of Hats</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/List_of_hat_styles">List of Different Hat Styles</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Middle_Ages">The Middle Ages</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Victorian_era">The Victorian Era</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/American_Century">The American Century</a></li>
+              <li><a href="https://media.asicentral.com/resources/impressions-study-2016.pdf">2016 Global Advertising Specialities Impressions Study</a></li>
+          </ul>
+      </div>
+
+      </div>
+
+    </footer>
+  </body>
+</html>
